@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "@color/blue"
+    tools:context = ".ui.activities.MovieDetailActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id = "@+id/materialCardView2"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "8dp"
+        android:layout_marginTop = "8dp"
+        android:layout_marginEnd = "8dp"
+        app:cardCornerRadius = "20dp"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toTopOf = "parent">
+
+        <ImageView
+            android:id = "@+id/ivDetailImage"
+            android:layout_width = "match_parent"
+            android:layout_height = "200dp"
+            android:scaleType = "fitXY"
+            android:src = "@color/white"/>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id = "@+id/materialCardView3"
+        android:layout_width = "0dp"
+        android:layout_height = "0dp"
+        android:layout_marginStart = "8dp"
+        android:layout_marginTop = "8dp"
+        android:layout_marginEnd = "8dp"
+        app:cardCornerRadius = "20dp"
+        app:layout_constraintBottom_toTopOf = "@+id/textView4"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toBottomOf = "@+id/materialCardView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "match_parent">
+
+            <TextView
+                android:id = "@+id/tvDetailTitle"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart = "8dp"
+                android:layout_marginTop = "16dp"
+                android:layout_marginEnd = "8dp"
+                android:text = "Frozen"
+                android:textColor = "@color/black"
+                android:textSize = "@dimen/text_regular_3x"
+                android:textStyle = "bold"
+                app:layout_constraintEnd_toStartOf = "@+id/ivFavorite"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent"/>
+
+            <ImageView
+                android:id = "@+id/ivFavorite"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginEnd = "8dp"
+                android:src = "@drawable/ic_baseline_favorite_24"
+                app:layout_constraintBottom_toBottomOf = "@+id/tvDetailTitle"
+                app:layout_constraintEnd_toStartOf = "@+id/tvPopular"
+                app:layout_constraintTop_toTopOf = "@+id/tvDetailTitle"/>
+
+            <TextView
+                android:id = "@+id/tvPopular"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginEnd = "8dp"
+                android:text = "90%"
+                android:textStyle = "bold"
+                app:layout_constraintBottom_toBottomOf = "@+id/tvDetailTitle"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintTop_toTopOf = "@+id/tvDetailTitle"/>
+
+            <TextView
+                android:id = "@+id/tvDetailDate"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart = "8dp"
+                android:layout_marginTop = "8dp"
+                android:text = "Nov22,2019"
+                android:textStyle = "bold"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@+id/tvDetailTitle"/>
+
+            <TextView
+                android:id = "@+id/tvVote"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "8dp"
+                android:layout_marginEnd = "8dp"
+                android:text = "12000 votes"
+                android:textStyle = "bold"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@+id/tvDetailTitle"/>
+
+            <TextView
+                android:id = "@+id/tvDetailDuration"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart = "8dp"
+                android:layout_marginTop = "8dp"
+                android:text = "1hr43mins"
+                android:textColor = "@color/blue"
+                android:textStyle = "bold"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@+id/tvDetailDate"/>
+
+            <TextView
+                android:id = "@+id/tvLanguage"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "8dp"
+                android:layout_marginEnd = "8dp"
+                android:text = "English"
+                android:textStyle = "bold"
+                app:layout_constraintEnd_toStartOf = "@+id/textView11"
+                app:layout_constraintTop_toBottomOf = "@+id/tvDetailDate"/>
+
+            <TextView
+                android:id = "@+id/textView11"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginEnd = "8dp"
+                android:text = "2D"
+                android:textColor = "@color/black"
+                android:textStyle = "bold"
+                app:layout_constraintBottom_toBottomOf = "@+id/tvLanguage"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintTop_toTopOf = "@+id/tvLanguage"/>
+
+            <TextView
+                android:id = "@+id/tvDetailDescription"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart = "8dp"
+                android:layout_marginTop = "16dp"
+                android:text = "Movie description"
+                android:textColor = "@color/black"
+                android:textSize = "@dimen/text_regular_2x"
+                android:textStyle = "bold"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@+id/tvDetailDuration"/>
+
+            <TextView
+                android:id = "@+id/tvDetailOverViewDescription"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart = "8dp"
+                android:layout_marginTop = "8dp"
+                android:ellipsize = "end"
+                android:maxLines = "5"
+                android:text = "@string/hello_blank_fragment"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@+id/tvDetailDescription"/>
+
+            <TextView
+                android:id = "@+id/textView14"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginStart = "8dp"
+                android:layout_marginTop = "8dp"
+                android:text = "Cast"
+                android:textColor = "@color/black"
+                android:textSize = "@dimen/text_regular_2x"
+                android:textStyle = "bold"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@+id/tvDetailOverViewDescription"/>
+
+            <TextView
+                android:id = "@+id/tvViewAll"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:layout_marginTop = "8dp"
+                android:layout_marginEnd = "8dp"
+
+                android:text = "View all"
+                android:textColor = "@color/red"
+                android:textStyle = "bold"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@+id/tvDetailOverViewDescription"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id = "@+id/rvCast"
+                android:layout_width = "0dp"
+                android:layout_height = "0dp"
+                android:layout_marginStart = "8dp"
+                android:layout_marginTop = "8dp"
+                android:layout_marginEnd = "8dp"
+                android:layout_marginBottom = "8dp"
+                android:overScrollMode = "never"
+                app:layout_constraintBottom_toBottomOf = "parent"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toBottomOf = "@+id/textView14"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id = "@+id/textView4"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginTop = "8dp"
+        android:layout_marginBottom = "16dp"
+        android:text = "@string/book_tickets"
+        android:textColor = "@color/white"
+        android:textSize = "@dimen/text_regular_2x"
+        android:textStyle = "bold"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toBottomOf = "@+id/materialCardView3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

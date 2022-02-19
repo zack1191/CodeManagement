@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Development/CodeManagement/app/src/main/res/drawable-v24/search_button_background.xml" value="0.3692708333333333" />
+        <entry key="..\:/Development/CodeManagement/app/src/main/res/drawable/card_view_background.xml" value="0.3692708333333333" />
+        <entry key="..\:/Development/CodeManagement/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.3692708333333333" />
+        <entry key="..\:/Development/CodeManagement/app/src/main/res/drawable/ic_baseline_favorite_24_white.xml" value="0.3692708333333333" />
+        <entry key="..\:/Development/CodeManagement/app/src/main/res/drawable/ic_baseline_filter_list_24.xml" value="0.3692708333333333" />
+        <entry key="..\:/Development/CodeManagement/app/src/main/res/drawable/rounded_corner.xml" value="0.3692708333333333" />
+        <entry key="..\:/Development/CodeManagement/app/src/main/res/layout/activity_main.xml" value="0.3536458333333333" />
+        <entry key="..\:/Development/CodeManagement/app/src/main/res/layout/activity_movie_detail.xml" value="0.3536458333333333" />
+        <entry key="..\:/Development/CodeManagement/app/src/main/res/layout/fragment_movies.xml" value="0.3536458333333333" />
+        <entry key="..\:/Development/CodeManagement/app/src/main/res/layout/item_cast.xml" value="0.3536458333333333" />
+        <entry key="..\:/Development/CodeManagement/app/src/main/res/layout/item_movies.xml" value="0.5" />
+        <entry key="..\:/Development/CodeManagement/app/src/main/res/layout/item_upcoming_movies.xml" value="0.3536458333333333" />
+        <entry key="..\:/Development/CodeManagement/app/src/main/res/layout/item_upcomming_movies.xml" value="0.3536458333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

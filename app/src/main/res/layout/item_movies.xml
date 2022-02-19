@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "wrap_content"
+    android:layout_height = "wrap_content"
+    android:layout_margin = "4dp"
+    app:layout_constraintBottom_toBottomOf = "parent"
+    app:layout_constraintEnd_toEndOf = "parent"
+    app:layout_constraintStart_toStartOf = "parent"
+    app:layout_constraintTop_toTopOf = "parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id = "@+id/materialCardView"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        app:cardCornerRadius = "10dp"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toTopOf = "parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id = "@+id/ivMovie"
+            android:layout_width = "120dp"
+            android:layout_height = "150dp"
+            android:foregroundGravity = "center"
+            android:scaleType = "fitXY"
+            android:src = "@color/blue"
+            app:layout_constraintEnd_toEndOf = "parent"
+            app:layout_constraintStart_toStartOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id = "@+id/tvTitle"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "8dp"
+        android:layout_marginTop = "6dp"
+        android:layout_marginEnd = "8dp"
+        android:ellipsize = "end"
+        android:maxLines = "2"
+        android:text = "TextView"
+        android:textSize = "@dimen/text_regular"
+        android:textStyle = "bold"
+        app:layout_constraintBottom_toTopOf = "@+id/ivMovieFavorite"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toBottomOf = "@+id/materialCardView"/>
+
+    <ImageView
+        android:id = "@+id/ivMovieFavorite"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "8dp"
+        android:src = "@drawable/ic_baseline_favorite_24"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"/>
+
+    <TextView
+        android:id = "@+id/tvRating"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "8dp"
+        android:layout_marginEnd = "8dp"
+        android:text = "@string/popular_percent"
+        android:textSize = "@dimen/text_regular"
+        app:layout_constraintBottom_toBottomOf = "@+id/ivMovieFavorite"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toEndOf = "@+id/ivMovieFavorite"
+        app:layout_constraintTop_toTopOf = "@+id/ivMovieFavorite"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
